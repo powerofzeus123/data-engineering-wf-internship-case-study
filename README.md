@@ -1,11 +1,14 @@
-# analytics-engineering-internship-case-study
-
-## Company
+<p align="center">
+  <img src="assets/watchfinder-logo.png" width="150" alt="Watchfinder & Co. Logo">
+</p>
 
 **Watchfinder & Co.**
 Duration: 6 months (extended from an initial 3-month internship)
 
 ---
+
+# analytics-engineering-internship-case-study
+
 
 ## Overview
 
@@ -47,13 +50,26 @@ All work was deployed to production and is actively used by the business.
 
 ---
 
-### Exemplar Data Architecture
 
 
+<h2 align="center">Data Architecture Diagram</h2>
+
+<p align="center">
+  <img src="assets/ex-Data-architecture.png" width="700" alt="Data Architecture Diagram">
+</p>
+
+<p align="center">
+  <em>This diagram shows how data is ingested via Airbyte, orchestrated with Airflow DAGs, transformed using dbt, and delivered to analytics dashboards.</em>
+</p>
 
 **Flow:**
 
-Source System (e.g., MySQL / Extracted CSVs) → Airbyte (Ingestion Pipelines) → BigQuery → dbt (staging → intermediate → marts) → Analytics Mart → Airflow DAGs for orchestration & monitoring → Metabase dashboards
+</p>
+
+<p align="center">
+  <em>Source System (e.g., MySQL / Extracted CSVs) → Airbyte (Ingestion Pipelines) → BigQuery → dbt (staging → intermediate → marts) → Analytics Mart → Airflow DAGs for orchestration & monitoring → Metabase dashboards
+.</em>
+</p>
 
 **Notes:**
 
