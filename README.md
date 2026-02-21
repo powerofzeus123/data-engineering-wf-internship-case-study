@@ -1,13 +1,16 @@
 <p align="center">
-  <img src="assets/watchfinder-logo.png" width="150" alt="Watchfinder & Co. Logo">
+  <img src="assets/watchfinder-logo.png" width="300" alt="Watchfinder & Co. Logo" style="border-radius: 50%;">
 </p>
 
-**Watchfinder & Co.**
-Duration: 6 months (extended from an initial 3-month internship)
+ 
+<p align="center">
+<em>Duration: 6 months (extended from an initial 3-month internship)</em>
+</p>
+
 
 ---
 
-# analytics-engineering-internship-case-study
+# Data-engineering-internship-case-study
 
 
 ## Overview
