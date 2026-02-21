@@ -78,7 +78,7 @@ All work was deployed to production and is actively used by the business.
 
 * Source data simulates transactional or marketing platform data.
 * **Service accounts** securely authenticated dbt and Airflow with BigQuery, following **least-privilege principles**.
-* dbt layered modelling applied: **staging → intermediate → marts**.
+* dbt layered modelling applied: **staging → intermediate → marts**. See an example dbt model here: [stg_customers.sql](models/staging/stg_customers.sql) 
 * Pipelines were orchestrated and monitored using **Airflow**, with **Airbyte handling ingestion**; failed runs were retried after corrections.
 * DAG monitoring in Airflow included tracking task execution, retries, and dependencies to ensure timely delivery of analytics datasets.
 
