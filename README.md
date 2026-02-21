@@ -84,6 +84,16 @@ All work was deployed to production and is actively used by the business.
 
 ---
 
+<h2 align="center">Airflow DAG Example</h2>
+
+<p align="center">
+  <img src="assets/ex-demo_complex_dag_overview_with_failed_tasks.png" width="700" alt="Airflow DAG Screenshot">
+</p>
+
+<p align="center">
+  <em>This DAG is a public example illustrating pipeline orchestration. The screenshot shows a series of failed placeholder tasks (highlighted in red) labeled “empty 1”, “empty 2”, etc., which simulate tasks similar to those I monitored, troubleshooted, and reran during my internship to ensure reliable data pipelines.</em>
+</p>
+
 ## Team Contributions & Workflow
 
 * Owned my own tickets in the team backlog, including pipelines for analysts
